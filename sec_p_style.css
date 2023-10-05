@@ -1,0 +1,37 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.wrap{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.wrap img{
+    height: 100vh;
+    width: 100%;
+}
+.btn_next{
+    width: 25vw;
+    position: absolute;
+    left:20vw;
+    bottom: 8vh;
+    z-index: 2;
+}
+.btn_next img{
+    width: 90%;
+    height: 20vh;
+    cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+    .wrap img{
+        height: 60vh;
+        width: 100%;
+    }
+    .btn_next{
+        left:37vw;
+        bottom: 20vh;
+        width: 45vw;
+
+    }
+}

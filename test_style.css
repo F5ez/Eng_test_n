@@ -1,0 +1,246 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.wrap{
+    width:100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: url("./img/фон3.png");
+}
+.header{
+
+    display: flex;
+    flex-basis: 100%;
+    margin-top: 5vh;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+.head_text{
+    flex-basis: 40%;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: white;
+    padding: 0.5vw;
+}
+.head_text img{
+    height: 9vh;
+    width: 100%;
+}
+.head_logo{
+    display: flex;
+    position: absolute;
+    right:0;
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    overflow: hidden;
+    background-color: white;
+    padding: 1vw;
+    margin-right: 2vw;
+}
+.head_logo img{
+    height: 130px;
+    width: 130px;
+}
+.mid{
+    display: flex;
+    flex-basis: 70%;
+    height: 70vh;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.count{
+    flex-basis: 100%;
+    font-size: 5em;
+    margin:-5vh 0 2vh 1vw;
+    height: 10vh;
+    font-family: Comic Sans MS, Comic Sans, cursive	;
+    color:white;
+}
+.process{
+    flex-basis: 100%;
+    height: 2vh;
+    margin-top: 0.5vh;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.progressbar{
+    flex-basis: 2%;
+    margin-left: 0.3vw;
+    height: 2.5vh;
+    border-radius: 100%;
+    background-color: #f1f1f1;
+}
+.test_core{
+    flex-basis: 100%;
+    height: 50vh ;
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 5vh;
+    display: flex;
+    padding: 3vw;
+}
+.question{
+    flex-basis: 50%;
+    padding: 2vw;
+    font-size: 4em;
+    font-weight: 500;
+    font-family: Palatino, URW Palladio L, serif		;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+#close{
+    color:#bebebe;
+    border-radius: 30px;
+    background-color: #bebebe;
+    user-select: none;
+
+}
+.answers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+    background-color: #bebebe;
+    border-radius: 30px;
+    flex-wrap: wrap;
+
+}
+.answ{
+    flex-basis: 85%;
+    border-radius: 30px;
+    height: 10vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 2em;
+    font-weight: 500;
+    transition: 0.5s all;
+}
+.answ:hover{
+    transform: scale(1.1);
+}
+@media screen and (max-width: 1600px) {
+    .mid{
+        margin-top: 5vh;
+    }
+
+}
+@media screen and (max-width: 1280px) {
+    .progressbar{
+        height: 2vh;
+    }
+
+}
+@media screen and (max-width: 1024px) {
+    .progressbar{
+        height: 1.2vh
+    }
+
+    .test_core{
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .head_logo{
+
+        height: 100px;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 18vh;
+    }
+    .head_logo img{
+        width: 80px;
+        height: 80px;
+    }
+    .answers{
+        height: 50vh;
+    }
+    .mid{
+        margin-top: 5vh;
+    }
+    .question{
+        font-size: 3em;
+    }
+    .answ{
+        font-size: 1em;
+    }
+    .head_text{
+        flex-basis: 70%;
+    }
+    .head_text img{
+        height: 8vh;
+    }
+    .answ{
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+.head_text{
+    flex-basis: 90%;
+}
+.head_text img{
+    height: 6vh;
+}
+.head_logo{
+    position: absolute;
+    left:30%;
+    bottom: 3vh;
+    width: 30vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mid{
+    flex-basis: 90%;
+    align-items: flex-start;
+}
+.count{
+    font-size: 1em;
+    height: auto;
+}
+.process{
+    margin-top: -2vh;
+    flex-basis: 90%;
+    display: flex;
+}
+.progressbar{
+    width: 1.2vw;
+    height: 0.7vh;
+    margin-left: 1vw;
+}
+.test_core{
+    flex-direction: column;
+}
+.question{
+    text-align: center;
+    font-size: 1.7em;
+}
+.answers{
+    border-radius: 20px;
+    padding: 1vh 0 1vh 0;
+}
+.answ{
+    height: 6vh;
+    border-radius: 10px;
+}
+}
