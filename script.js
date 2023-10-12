@@ -1,9 +1,9 @@
 const closeSpan = document.getElementById("close");
-const clone = closeSpan.cloneNode(true);  // Клонируем элемент
+const clone = closeSpan.cloneNode(true);
 
 const arr = [
     { questions: `1. Roberto is Italian. He’s ${clone.outerHTML} Italy` ,
-    a:"from", b:"to", c:"at", answer:"from"
+        a:"from", b:"to", c:"at", answer:"from"
     },
     { questions: `2.I leave for work ${clone.outerHTML} quarter past eight` ,
         a:"in", b:"at", c:"on", answer:"at"
@@ -124,65 +124,105 @@ const arr = [
     },
 
 ];
-
-// localStorage.clear()
+let answ_obj= {}
 closeSpan.parentNode.replaceChild(clone, closeSpan);
 
 
-let count=0
-let point=0
+//add Children q//
+for (let i=0;i<arr.length;i++){
+    let qt=document.getElementsByClassName("question")[0].cloneNode(true)
+    qt.style.display="flex"
+    qt.children[0].innerHTML=arr[i].questions
+    qt.children[1].innerHTML=arr[i].a
+    qt.children[2].innerHTML=arr[i].b
+    qt.children[3].innerHTML=arr[i].c
 
-let answer_btn=document.getElementsByClassName("answers")[0]
-let question=document.getElementsByClassName("question")[0].children[0]
-let process_bar=document.getElementsByClassName("process")[0]
-for(let i=0;i<=count;i++){
-    process_bar.children[i].style.backgroundColor="#48DA48FF"
-
-}
-localStorage.getItem("itter")==null?localStorage.setItem("itter","0"):count=Number(localStorage.getItem("itter"))
-localStorage.getItem("point")==null?localStorage.setItem("point","0"):point=Number(localStorage.getItem("point"))
-document.getElementsByClassName("count")[0].innerHTML=`${count+1}/40`
-for(let i=0;i<=count;i++){
-    process_bar.children[i].style.backgroundColor="#48DA48FF"
+    document.getElementsByClassName("mid_test")[0].appendChild(qt)
 }
 
 
 
-function text_middle(count){
-    question.innerHTML=arr[count].questions
-    answer_btn.children[0].innerHTML=arr[count].a
-    answer_btn.children[1].innerHTML=arr[count].b
-    answer_btn.children[2].innerHTML=arr[count].c
-    for(let i=0;i<=count;i++){
-        process_bar.children[i].style.backgroundColor="#48DA48FF"
+/// Event click + move
+
+let mid=document.getElementsByClassName("mid_test")[0]
+
+
+for(let i=0;i<mid.children.length;i++){
+    let child=mid.children[i]
+    let nextChild=mid.children[i+1]
+    for(let j=1;j<child.children.length;j++){
+
+        child.children[j].addEventListener("click",function (e){
+            child.children[1].style.borderColor="rgb(114,182,212)"
+            child.children[2].style.borderColor="rgb(114,182,212)"
+            child.children[3].style.borderColor="rgb(114,182,212)"
+            e.target.style.borderColor="rgb(285,160,86)"
+            let answ=e.target.textContent
+            answ_obj[i]=answ
+
+            nextChild.scrollIntoView({behavior :"smooth"})
+        })
     }
-    document.getElementsByClassName("count")[0].innerHTML=`${count+1}/40`
 }
 
-text_middle(count)
 
-for(let i=0;i<answer_btn.children.length;i++){
-    answer_btn.children[i].addEventListener("click",function (e){
-        if(count===39){
-            localStorage.setItem("itter","0")
-            text_middle(count)
-            localStorage.removeItem("itter")
-            location.href="result.html"
+mid.addEventListener("scroll",function (e){
+    let element=e.target
+    const scrollTop = element.scrollTop;
+    const scrollHeight = element.scrollHeight;
+    const height = element.clientHeight;
 
-        }
-        else{
-            if(e.target.textContent===arr[count].answer){
+    const scrolledPercentage = (scrollTop / (scrollHeight - height)) * 100;
+    document.getElementsByClassName("bar_color")[0].style.width=`${scrolledPercentage}vw`
+
+})
+let finish=document.getElementsByClassName("finish")[0]
+
+mid.insertBefore(finish,mid.children[42])
+finish.addEventListener("click",function (){
+        let point=0
+        for(let key in answ_obj){
+            if(answ_obj[key]===arr[key-2].answer){
                 point++
-                localStorage.setItem("point",String(point))
             }
-
-            count++
-            localStorage.setItem("itter",String(count))
-            text_middle(count)
-
         }
+        document.getElementsByClassName("result")[0].style.opacity="1"
+        document.getElementsByClassName("result")[0].style.zIndex="1"
+    let text=document.getElementsByClassName("lvl_text")[0]
+    let lvl_img_text_a=document.getElementsByClassName("lvl_img_text")[0]
+    if(point<=10){
+        text.textContent=`Твій рівень - Beginner`
+        lvl_img_text_a.textContent="Pre-A1"
+    }
+    else if(point<=17){
+        text.textContent=`Твій рівень - Elementary`
+        lvl_img_text_a.textContent="A1"
+    }
+    else if(point<=23){
+        text.textContent=`Твій рівень - Pre-Intermediate`
+        lvl_img_text_a.textContent="A2"
+    }
+    else if(point<=29){
+        text.textContent=`Твій рівень - Intermediate`
+        lvl_img_text_a.textContent="B1"
+    }
+    else if(point<=35){
+        text.textContent=`Твій рівень - Upper-Intermediate`
+        lvl_img_text_a.textContent="B2"
+    }
+    else if(point<=40){
+        text.textContent=`Твій рівень - Advanced`
+        lvl_img_text_a.textContent="C1"
+    }
 
 
-    })
-}
+})
 
+
+
+// 1-10 Beginner Pre-A1
+// 11-17 Elementary A1
+// 18-23 Pre-Intermediate A2
+// 24-29 Intermediate B1
+// 30-35 Upper- Intermediate B2
+// 36-40 Advanced C1
