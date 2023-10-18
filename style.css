@@ -55,6 +55,7 @@
     background-color: rgb(114,182,212);
 }
 .header_text_2_1{
+    background-color: red;
     flex-basis: 50%;
     display: flex;
     justify-content: center;
