@@ -402,7 +402,13 @@ justify-content: center;
     }
 }
 @media screen and (max-width: 768px) {
+    .lvl_img{
+        height: 40vh;
 
+    }
+    .lvl_img img{
+        width: 25vw;
+    }
 
     .result{
         width: 100vw;
@@ -415,6 +421,7 @@ justify-content: center;
     }
 }
 @media screen and (max-width: 600px) {
+
     .lvl_img{
         margin-top: 8vh;
     }
@@ -507,6 +514,12 @@ justify-content: center;
     .logo2 img{
         width: 100px;
         height: 100px;
+    }
+    .finish{
+
+    }
+    .finish_text{
+
     }
 
 
