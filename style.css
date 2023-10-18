@@ -168,8 +168,6 @@ justify-content: center;
 }
 .icons_mid_res{
     background-color: #ffd1cc;
-    border-radius: 0 0 30px 30px;
-    margin-top:5vh;
     padding-bottom: 5vh;
 
 
@@ -516,10 +514,12 @@ justify-content: center;
         height: 100px;
     }
     .finish{
+        height: 4vh;
 
     }
     .finish_text{
-
+    flex-basis: 45%;
+        font-size: 1.7em;
     }
 
 
