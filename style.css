@@ -8,9 +8,11 @@ body{
     max-width:1920px;
     min-width: 414px;
     max-height: 1200px;
+    overflow: hidden;
 }
 .wrap{
     width: 100vw;
+    max-width:1920px;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -160,7 +162,7 @@ justify-content: center;
     height: auto;
     width:55vw;
     opacity: 0;
-    top:30%;
+    top:20%;
     z-index: -1;
     justify-content: center;
     align-items: flex-start;
