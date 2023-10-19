@@ -6,7 +6,8 @@
 }
 body{
     max-width:1920px;
-    min-width: 768px;
+    min-width: 414px;
+    max-height: 1200px;
 }
 .wrap{
     width: 100vw;
