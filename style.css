@@ -343,6 +343,10 @@ height: auto;    flex-wrap: wrap;
     }
 }
 @media screen and (max-width: 1024px) and (min-height: 1280px) {
+    .mid_test{
+        flex-basis: 100%;
+        height: auto;
+    }
     .header_text{
         font-size: 3.5em;
     }
