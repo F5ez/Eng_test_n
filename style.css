@@ -204,7 +204,7 @@ height: auto;    flex-wrap: wrap;
 }
 .lvl_img_text{
     margin-top: -2vh;
-    font-size: 3em;
+    font-size: 2.7em;
     font-weight: 700;
     background-color: white;
     flex-basis: 16%;
@@ -268,6 +268,9 @@ height: auto;    flex-wrap: wrap;
     position: absolute;
 }
 @media screen and (max-width: 1600px) {
+    .lvl_img_text{
+        font-size: 2.7em;
+    }
     .header_text{
         height: 8vh;
         font-size: 4em;
@@ -284,6 +287,7 @@ height: auto;    flex-wrap: wrap;
     }
 }
 @media screen and (max-width: 1350px) {
+
     .oblako {
         margin-left: 44vw;
 
@@ -417,9 +421,17 @@ height: auto;    flex-wrap: wrap;
         height: 300px;
     }
     .lvl_img_text{
-        width: 140px;
+        width: 170px;
         height: 160px;
     }
+    .finish_text{
+        height: 5vh;
+    }
+    .question{
+        flex-basis: 100%;
+
+    }
+
 }
 @media screen and (max-width: 768px) {
     .lvl_img{
