@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Impact');
+
 *{
     padding: 0;
     margin:0;
 }
+
 .wrap{
     width: 100vw;
     height: 100vh;
@@ -32,10 +35,13 @@
     right: 1vw;
 
 }
+
 .header_text{
     flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 10vh;
-    text-align: center;
     background-color: rgb(285,160,86);
     font-size: 4.5em;
     font-family: Impact,fantasy;
@@ -55,11 +61,10 @@
     background-color: rgb(114,182,212);
 }
 .header_text_2_1{
-    background-color: red;
     flex-basis: 50%;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     height: auto;
     font-size: 2.5em;
     text-align: center;
@@ -143,11 +148,12 @@ justify-content: center;
     user-select: none;
 }
 .result{
-
+    background-color: #ffd1cc;
+    border-radius: 30px;
     position: fixed;
     display: flex;
     flex-wrap: wrap;
-    height: 70vh;
+    height: auto;
     width:55vw;
     opacity: 0;
     top:30%;
@@ -158,17 +164,16 @@ justify-content: center;
 
 }
 .result_mid{
+    padding-bottom: 5vh;
+
     display: flex;
     flex-basis: 100%;
-    height: 55vh;
-    flex-wrap: wrap;
-    background-color: #ffd1cc;
+height: auto;    flex-wrap: wrap;
     align-content: flex-start;
     border-radius: 30px 30px 0 0;
 }
 .icons_mid_res{
-    background-color: #ffd1cc;
-    padding-bottom: 5vh;
+    margin-top: 4vh;
 
 
 }
@@ -373,6 +378,14 @@ justify-content: center;
 }
 
 @media screen and (max-width: 1024px) {
+
+    .logo{
+        height: 1vh;
+    }
+    .header_text_2_1{
+        flex-basis: 70%;
+        font-size: 4em;
+    }
     .oblako {
         margin-left: 48vw;
 
@@ -381,7 +394,7 @@ justify-content: center;
 
     .header_text{
         font-size: 3.5em;
-        height: 7vh;
+        height: auto;
     }
 
     .header_text_2{
@@ -420,6 +433,7 @@ justify-content: center;
 }
 @media screen and (max-width: 600px) {
 
+
     .lvl_img{
         margin-top: 8vh;
     }
@@ -432,8 +446,19 @@ justify-content: center;
         justify-content: space-evenly;
 
     }
+
     .result_mid{
+
         height: auto;
+        align-content: flex-start;
+    }
+    .lvl_img{
+        height: auto;
+        border:2px solid black;
+    }
+    .lvl_img img{
+        width: 200px;
+        height: 200px;
     }
     .icons_mid_res2 img{
         width: 50px;
@@ -441,15 +466,18 @@ justify-content: center;
 
 
     }
+    .cup{
+    }
     .cup img{
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
     }
     .lvl_text{
+        border:2px solid green;
         font-size: 2em;
     }
     .lvl_img_text{
-        height: 10vh;
+        height: 100px;
         flex-basis: 30%;
     }
     .f_m_t{
