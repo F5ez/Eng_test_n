@@ -369,8 +369,9 @@ height: auto;    flex-wrap: wrap;
         font-size: 3em;
     }
     .lvl_img_text{
-        height: 9vh;
-        flex-basis: 27%;
+        height: auto;
+        flex-basis: 23%;
+        font-size: 2.7em;
     }
     .f_m_t{
         flex-basis: 80%;
@@ -384,7 +385,7 @@ height: auto;    flex-wrap: wrap;
     }
     .header_text_2_1{
         flex-basis: 70%;
-        font-size: 4em;
+        font-size: 3.2em;
     }
     .oblako {
         margin-left: 48vw;
@@ -410,6 +411,14 @@ height: auto;    flex-wrap: wrap;
     }
     .mid_test{
         height: 55vh;
+    }
+    .lvl_img img{
+        width: 300px;
+        height: 300px;
+    }
+    .lvl_img_text{
+        width: 140px;
+        height: 160px;
     }
 }
 @media screen and (max-width: 768px) {
@@ -442,7 +451,7 @@ height: auto;    flex-wrap: wrap;
     .icons_mid_res2{
         display: flex;
         margin-top: 2vh;
-        flex-basis: 80%;
+        flex-basis: 100%;
         justify-content: space-evenly;
 
     }
@@ -454,7 +463,6 @@ height: auto;    flex-wrap: wrap;
     }
     .lvl_img{
         height: auto;
-        border:2px solid black;
     }
     .lvl_img img{
         width: 200px;
@@ -468,12 +476,14 @@ height: auto;    flex-wrap: wrap;
     }
     .cup{
     }
+    .f_m_t{
+        margin-top: 2vh;
+    }
     .cup img{
         width: 150px;
         height: 150px;
     }
     .lvl_text{
-        border:2px solid green;
         font-size: 2em;
     }
     .lvl_img_text{
