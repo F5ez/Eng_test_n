@@ -231,6 +231,7 @@ height: auto;    flex-wrap: wrap;
     font-size: 2em;
 }
 .f_m_t{
+    margin-top: 2vh;
     display: flex;
     text-align: center;
     flex-basis: 50%;
