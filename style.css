@@ -6,7 +6,6 @@
 }
 body{
     max-width:1920px;
-    min-width: 414px;
     max-height: 1200px;
     overflow: hidden;
 }
@@ -192,7 +191,7 @@ height: auto;    flex-wrap: wrap;
 }
 .lvl_text{
     font-weight: 700;
-    margin-top: 2vh;
+    margin: 2vh 0 4vh 0;
     flex-basis:100%;
     display: flex;
     justify-content: center;
