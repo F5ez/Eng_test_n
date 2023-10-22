@@ -497,7 +497,7 @@ justify-content: center;
         font-size: 1.4em;
     }
 }
-@media screen and (min-height: 1000px) {
+@media screen and (min-height: 1200px) {
     .result,.result_mid{
         max-height: 800px;
     }
@@ -508,15 +508,33 @@ justify-content: center;
         margin-top: 0;
     }
     .cup {
-        top:0;
-        display: flex;
+
+        display: none;
         align-items: center;
     }
     .cup img{
-        margin-bottom: 700px;
+
     }
     .f_m_t{
         font-size: 40px;
-        flex-basis: 100%;
+        flex-basis: 98%;
+    }
+    .header_text{
+        max-height: 80px;
+    }
+    .header_text_2_1{
+        max-height: 120px;
+        font-size: 3em;
+    }
+}
+@media screen and (min-height: 800px) {
+    .question{
+        font-size: 0.8em;
+    }
+    .finish_text{
+        font-size: 2.5em;
+    }
+    .result{
+        top:0;
     }
 }
