@@ -498,7 +498,13 @@ justify-content: center;
         font-size: 1.4em;
     }
 }
+@media screen and (max-height: 850px) {
+    .result{
+        top:0;
+    }
+}
 @media screen and (min-height: 1200px) {
+
     .result,.result_mid{
         max-height: 800px;
     }
@@ -535,7 +541,5 @@ justify-content: center;
     .finish_text{
         font-size: 2.5em;
     }
-    .result{
-        top:0;
-    }
+
 }
