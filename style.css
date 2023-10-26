@@ -8,6 +8,7 @@
 body{
 
 }
+
 .wrap{
     max-height: 100vh;
     width: 100vw;
@@ -52,7 +53,7 @@ body{
     font-size: 4.5em;
     font-family: Impact,fantasy;
     padding: 5vh 0 5vh 0;
-    color:white;
+    color:red;
     white-space:nowrap;
 }
 .header_text_2{
