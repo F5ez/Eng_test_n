@@ -29,7 +29,7 @@ body{
 }
 .logo{
     flex-basis: 100%;
-    height: 3vh;
+    height: 2vh;
     display: flex;
     justify-items: flex-end;
     align-items: center;

@@ -157,8 +157,7 @@ for(let i=0;i<mid.children.length;i++){
             child.children[2].style.borderColor="rgb(114,182,212)"
             child.children[3].style.borderColor="rgb(114,182,212)"
             e.target.style.borderColor="rgb(285,160,86)"
-            let answ=e.target.textContent
-            answ_obj[i]=answ
+            answ_obj[i]=e.target.textContent
 
             nextChild.scrollIntoView({behavior :"smooth"})
         })
