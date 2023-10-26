@@ -505,7 +505,13 @@ justify-content: center;
         font-size: 1.4em;
     }
 }
-@media screen and (max-height: 850px) {
+@media screen and (max-height: 1000px) {
+    .logo img{
+        width: 120px;
+        height: 120px;
+    }
+}
+    @media screen and (max-height: 850px) {
     .result{
         top:0;
     }
@@ -557,3 +563,9 @@ justify-content: center;
 
 
 }
+@media screen and (max-height: 700px) {
+    .header_text_2_1{
+        font-size: 1.7em;
+    }
+}
+
