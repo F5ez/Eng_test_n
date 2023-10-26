@@ -58,7 +58,7 @@ body{
 }
 .header_text_2{
     /*background-color: black;*/
-    height: 10vh;
+    height: auto;
     flex-basis: 100%;
     display: flex;
     font-family: Arial, sans-serif ;
@@ -69,7 +69,8 @@ body{
     background-color: rgb(114,182,212);
 }
 .header_text_2_1{
-    flex-basis: 50%;
+
+    flex-basis: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -319,7 +320,7 @@ justify-content: center;
         height: 10vh;
     }
     .header_text_2_1{
-        height: 10vh;
+        height: auto;
         font-size: 2em;
         flex-basis: 60%;
     }
@@ -392,7 +393,7 @@ justify-content: center;
 
 
     .header_text_2{
-        height: 20vh;
+        height: auto;
         display: flex;
         justify-content: space-between;
     }
