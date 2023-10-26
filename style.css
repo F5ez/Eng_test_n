@@ -511,11 +511,7 @@ justify-content: center;
         height: 120px;
     }
 }
-    @media screen and (max-height: 850px) {
-    .result{
-        top:0;
-    }
-}
+
 @media screen and (min-height: 1200px) {
 
     .result,.result_mid{
@@ -546,8 +542,21 @@ justify-content: center;
         font-size: 3em;
     }
 }
-@media screen and (min-height: 800px) and (min-width: 1600px) {
-
+@media screen and (max-height: 850px) {
+    .lvl_img img{
+        width: 200px;
+        height: 200px;
+    }
+    .lvl_img_text{
+        width: 140px;
+        height: 120px;
+    }
+    .f_m_t{
+        margin-top: 10vh;
+    }
+    .result{
+        top:0;
+    }
 }
 @media screen and (min-height: 800px) {
     .question{
