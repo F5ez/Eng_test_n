@@ -34,8 +34,9 @@ body{
     align-items: center;
 }
 .logo img{
-    width: 300px;
-    height: 300px;
+    width: 12vmax;
+    height: 12vmax
+;
     position: absolute;
     right: 0.5vw;
 
@@ -52,6 +53,7 @@ body{
     font-family: Impact,fantasy;
     padding: 5vh 0 5vh 0;
     color:white;
+    white-space:nowrap;
 }
 .header_text_2{
     /*background-color: black;*/
@@ -202,6 +204,7 @@ justify-content: center;
     justify-content: center;
     align-items: center;
     font-size: 3em;
+    z-index: 1;
 
 }
 .lvl_img{
@@ -243,6 +246,7 @@ justify-content: center;
     flex-basis: 50%;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 .icons_mid_res{
 
@@ -288,10 +292,10 @@ justify-content: center;
 }
 
 @media screen and (max-width: 1340px){
-    .logo img{
-        width: 200px;
-        height: 200px;
-    }
+    /*.logo img{*/
+    /*    width: 200px;*/
+    /*    height: 200px;*/
+    /*}*/
     .lvl_img_text{
         font-size: 2em;
         flex-basis: 22%;
@@ -304,10 +308,10 @@ justify-content: center;
     .result{
         width: 65vw;
     }
-    .logo img{
-        width: 170px;
-        height: 170px;
-    }
+    /*.logo img{*/
+    /*    width: 170px;*/
+    /*    height: 170px;*/
+    /*}*/
     .header_text{
         font-size: 4em;
         height: 10vh;
@@ -320,10 +324,10 @@ justify-content: center;
 
 }
 @media screen and (max-width: 1024px) {
-    .logo img{
-        width: 150px;
-        height: 150px;
-    }
+    /*.logo img{*/
+    /*    width: 150px;*/
+    /*    height: 150px;*/
+    /*}*/
     .logo{
         height: 1vh;
     }
@@ -535,20 +539,7 @@ justify-content: center;
     }
 }
 @media screen and (min-height: 800px) and (min-width: 1600px) {
-    .header_text{
-        font-size: 45px;
-    }
-    .f_m_t{
-        flex-basis: 100%;
-        margin-top: 3vh;
-    }
-    .lvl_img{
-        margin-top: 2vh;
-    }
-    .logo img{
-        width: 120px;
-        height: 120px;
-    }
+
 }
 @media screen and (min-height: 800px) {
     .question{
