@@ -535,9 +535,8 @@ justify-content: center;
     }
 }
 @media screen and (min-height: 800px) and (min-width: 1600px) {
-    .icons_mid_res img{
-        width: 40px;
-        height: 40px;
+    .header_text{
+        font-size: 45px;
     }
     .f_m_t{
         flex-basis: 100%;
@@ -545,6 +544,10 @@ justify-content: center;
     }
     .lvl_img{
         margin-top: 2vh;
+    }
+    .logo img{
+        width: 120px;
+        height: 120px;
     }
 }
 @media screen and (min-height: 800px) {
