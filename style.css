@@ -44,6 +44,7 @@ body{
 }
 
 .header_text{
+    padding: 1vh 0 1vh 0;
     color:white;
     flex-basis: 100%;
     display: flex;
@@ -152,8 +153,9 @@ body{
 }
 
 #close{
-    color:rgb(114,182,212) ;
-    background-color: rgb(114,182,212);
+    color:white ;
+    /*background-color: rgb(114,182,212);*/
+    border:5px dashed rgb(255,219,161);
     user-select: none;
 }
 .result{
@@ -569,5 +571,3 @@ body{
         font-size: 1.7em;
     }
 }
-
-
