@@ -512,10 +512,7 @@ justify-content: center;
     .result,.result_mid{
         max-height: 800px;
     }
-    .logo img{
-        width: 80px;
-        height: 80px;
-    }
+
     .lvl_img{
         max-height: 50px;
     }
@@ -549,6 +546,10 @@ justify-content: center;
     }
     .finish_text{
         font-size: 2.3em;
+    }
+    .logo img{
+        width: 100px;
+        height: 100px;
     }
 
 
