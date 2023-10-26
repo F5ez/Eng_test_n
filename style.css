@@ -44,6 +44,7 @@ body{
 }
 
 .header_text{
+    color:white;
     flex-basis: 100%;
     display: flex;
     justify-content: center;
@@ -79,13 +80,14 @@ body{
 }
 .mid_test{
     display: flex;
-    flex-basis: 60%;
+    flex-basis: 100%;
     margin-top: 2vh;
     background-color: white;
     padding: 0 3vw 0 3vw;
     height: 56vh;
     flex-wrap: wrap;
     overflow-y: auto;
+    justify-content: center;
 }
 .mid_test::-webkit-scrollbar{
     display: none;
@@ -93,7 +95,7 @@ body{
 .question{
     display: none;
     margin-top: 5vh;
-    flex-basis: 100%;
+    flex-basis: 80%;
     flex-wrap: wrap;
 
 
@@ -351,6 +353,7 @@ justify-content: center;
 }
 @media screen and (max-width: 768px) {
 
+
     .logo img{
         display: none;
     }
@@ -384,7 +387,7 @@ justify-content: center;
         left: 0;
     }
     .header_text{
-        font-size: 3.5em;
+        font-size: 3.2em;
     }
 
 
@@ -421,7 +424,7 @@ justify-content: center;
     }
     .header_text{
         height: 3vh;
-        font-size: 2.7em;
+        font-size: 2.6em;
 
     }
     .f_m_t{
