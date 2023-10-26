@@ -37,7 +37,7 @@ body{
     width: 300px;
     height: 300px;
     position: absolute;
-    right: 1vw;
+    right: 0.5vw;
 
 }
 
@@ -534,12 +534,26 @@ justify-content: center;
         font-size: 3em;
     }
 }
+@media screen and (min-height: 800px) and (min-width: 1600px) {
+    .icons_mid_res img{
+        width: 40px;
+        height: 40px;
+    }
+    .f_m_t{
+        flex-basis: 100%;
+        margin-top: 3vh;
+    }
+    .lvl_img{
+        margin-top: 2vh;
+    }
+}
 @media screen and (min-height: 800px) {
     .question{
         font-size: 0.8em;
     }
     .finish_text{
-        font-size: 2.5em;
+        font-size: 2.3em;
     }
+
 
 }
