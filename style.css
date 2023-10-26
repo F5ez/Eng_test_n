@@ -62,7 +62,7 @@ body{
     flex-basis: 100%;
     display: flex;
     font-family: Arial, sans-serif ;
-    padding: 4vh 0 4vh 0;
+    padding: 3vh 0 3vh 0;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -508,7 +508,6 @@ body{
         margin-top: 0;
     }
     .cup {
-        border:2px solid red;
         display: flex;
         align-items: flex-start;
     }
